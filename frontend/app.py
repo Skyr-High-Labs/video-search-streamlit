@@ -8,7 +8,7 @@ st.title("Video Search Engine")
 st.write("As this app is in beta, we are currently only providing search functionality in YouTube videos. Paste the link of the video below, and your search query.")
 
 
-algoHelper = AlgoHelper()
+algoHelper = AlgoHelper(st.secrets["api_key"])
 
 #@st.cache
 def callAlgo(url, query):
